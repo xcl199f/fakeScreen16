@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">fakeScreen</string>
+    <string name="module_version">v1.0 (Build 20260804)</string>
+    <string name="xposeddescription">允许将电源按钮单击行为设置为仅熄屏</string>
+    <string name="github_repo_url">https://github.com/chuyb-re/fakeScreen</string>
+    <string name="help">https://github.com/chuyb-re/fakeScreen</string>
+    <string name="tip">模块激活并开启功能开关后，按下电源键将仅熄灭屏幕。</string>
+    <string name="dialog_tips_title">使用提示</string>
+    <string name="dialog_positive_btn">确定</string>
+</resources>
