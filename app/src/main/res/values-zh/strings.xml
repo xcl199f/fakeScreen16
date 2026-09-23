@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">fakeScreen</string>
+    <string name="module_version">v1.0 (Build 20260804)</string>
+    <string name="xposeddescription">允许将电源按钮单击行为设置为仅熄屏</string>
+    <string name="github_repo_url">https://github.com/chuyb-re/fakeScreen</string>
+    <string name="help">https://github.com/chuyb-re/fakeScreen</string>
+    <string name="tip">模块激活并开启功能开关后，按下电源键将仅熄灭屏幕。\n正常息屏后，按下电源键，不应当出现亮屏后马上息屏的现象。</string>
+    <string name="dialog_tips_title">使用提示</string>
+    <string name="dialog_positive_btn">确定</string>
+    <string name="tile_label">假装息屏</string>
+    <!-- 标题 -->
+    <string name="title_fake_screen">假装息屏</string>
+    <string name="desc_fake_screen">电源键模拟熄屏，不立刻锁屏、不断网</string>
+
+    <string name="title_disable_sleep">永不休眠 (仅在假装息屏后)</string>
+    <string name="desc_disable_sleep">假装息屏后，阻止系统自动进入休眠，永不锁屏</string>
+
+    <string name="shell_cmd_fake_screen">am broadcast -a top.chuyb.fakeScreen.ACTION_TOGGLE --ez enabled true</string>
+    <string name="shell_cmd_disable_sleep">am broadcast -a top.chuyb.fakeScreen.ACTION_TOGGLE_DISABLE_SLEEP --ez enabled true</string>
+    <string name="copy_success">已复制到剪贴板，需要root权限执行</string>
+    <string name="hint_tap_to_copy">点击命令复制</string>
+
+    <string name="title_shell_now">Shell命令 立即切换</string>
+    <string name="desc_shell_now">点击命令复制，需 root 执行</string>
+
+    <string name="shell_off_label">立即假装熄屏</string>
+    <string name="shell_off_cmd">am broadcast -a top.chuyb.fakeScreen.ACTION_FAKE_SCREEN_NOW --es mode screenoff</string>
+
+    <string name="shell_on_label">立即唤醒</string>
+    <string name="shell_on_cmd">am broadcast -a top.chuyb.fakeScreen.ACTION_FAKE_SCREEN_NOW --es mode screenon</string>
+
+    <string name="shell_toggle_label">切换状态</string>
+    <string name="shell_toggle_desc">根据当前状态翻转（熄屏↔亮屏）</string>
+    <string name="shell_toggle_cmd">am broadcast -a top.chuyb.fakeScreen.ACTION_FAKE_SCREEN_NOW</string>
+    <!-- 卡片标题 -->
+    <string name="title_version_info">版本信息</string>
+    <string name="title_github">GitHub仓库</string>
+    <string name="title_tips">使用提示</string>
+    <string name="title_hide_icon">隐藏桌面图标</string>
+    <string name="desc_hide_icon">App会立刻关闭，长按磁贴或从模块管理器打开</string>
+    <string name="hide_icon_toast_on">已隐藏桌面图标</string>
+    <string name="hide_icon_toast_off">已显示桌面图标</string>
+</resources>

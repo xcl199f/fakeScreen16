@@ -1,10 +1,43 @@
 <resources>
     <string name="app_name">fakeScreen</string>
     <string name="module_version">v1.0 (Build 20260804)</string>
-    <string name="xposeddescription">允许将电源按钮单击行为设置为仅熄屏</string>
+    <string name="xposeddescription">Allows setting the power button single-press action to screen-off only</string>
     <string name="github_repo_url">https://github.com/chuyb-re/fakeScreen</string>
     <string name="help">https://github.com/chuyb-re/fakeScreen</string>
-    <string name="tip">模块激活并开启功能开关后，按下电源键将仅熄灭屏幕。</string>
-    <string name="dialog_tips_title">使用提示</string>
-    <string name="dialog_positive_btn">确定</string>
+    <string name="tip">After the module is activated and the switch is enabled, pressing the power button will only turn off the screen.\nAfter a normal screen-off, pressing the power button should not cause the screen to turn on and then immediately turn off again.</string>
+    <string name="dialog_tips_title">Tips</string>
+    <string name="dialog_positive_btn">OK</string>
+    <string name="tile_label">Fake Screen Off</string>
+    <!-- Titles -->
+    <string name="title_fake_screen">Fake Screen Off</string>
+    <string name="desc_fake_screen">Simulate screen-off with the power button — no immediate lock, no network drop</string>
+
+    <string name="title_disable_sleep">Never Sleep (only after fake screen-off)</string>
+    <string name="desc_disable_sleep">After fake screen-off, prevent the system from entering sleep automatically — never lock</string>
+
+    <string name="shell_cmd_fake_screen">am broadcast -a top.chuyb.fakeScreen.ACTION_TOGGLE --ez enabled true</string>
+    <string name="shell_cmd_disable_sleep">am broadcast -a top.chuyb.fakeScreen.ACTION_TOGGLE_DISABLE_SLEEP --ez enabled true</string>
+    <string name="copy_success">Copied to clipboard. Root permission is required to execute.</string>
+    <string name="hint_tap_to_copy">Tap the command to copy</string>
+
+    <string name="title_shell_now">Shell Command — Immediate Toggle</string>
+    <string name="desc_shell_now">Tap the command to copy. Root permission is required.</string>
+
+    <string name="shell_off_label">Fake screen off now</string>
+    <string name="shell_off_cmd">am broadcast -a top.chuyb.fakeScreen.ACTION_FAKE_SCREEN_NOW --es mode screenoff</string>
+
+    <string name="shell_on_label">Wake up now</string>
+    <string name="shell_on_cmd">am broadcast -a top.chuyb.fakeScreen.ACTION_FAKE_SCREEN_NOW --es mode screenon</string>
+
+    <string name="shell_toggle_label">Toggle state</string>
+    <string name="shell_toggle_desc">Flip based on the current state (off ↔ on)</string>
+    <string name="shell_toggle_cmd">am broadcast -a top.chuyb.fakeScreen.ACTION_FAKE_SCREEN_NOW</string>
+    <!-- Card titles -->
+    <string name="title_version_info">Version Info</string>
+    <string name="title_github">GitHub Repository</string>
+    <string name="title_tips">Tips</string>
+    <string name="title_hide_icon">Hide App Icon</string>
+    <string name="desc_hide_icon">The app will close immediately. Reopen via long-press on the tile or from the module manager.</string>
+    <string name="hide_icon_toast_on">App icon hidden</string>
+    <string name="hide_icon_toast_off">App icon shown</string>
 </resources>
